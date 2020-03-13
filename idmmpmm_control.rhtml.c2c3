@@ -1,0 +1,42 @@
+<h1 style="padding-left: 4px;"><a href="../index.html" style="font-size: 60%;">&lt;back&gt;</a> Control comparison data</h1>
+
+<table style="font-size: 70%; font-weight: bolder;" cellspacing="1">
+
+<tr>
+  <th>factor name</th>
+  <th>logo</th>
+  <th>total</th>
+  <th>c1 imm</th>
+  <th>c2 imm</th>
+  <th>c3 imm</th>
+  <th>best hit</th>
+  <th>+3 sigma</th>
+  <th>0.001</th>
+</tr>
+
+<% $factors.each_with_index { |factor_name, i| 
+  data = $idmmpmm_control[factor_name]
+  %>
+  <tr<%= i%2 == 0 ? " class='colored'" : ""%>>
+    <td style="padding: 3px; font-size: 150%; "><a href="idmmpmm_html/<%= factor_name.to_id %>.html"><%= factor_name.to_id %>(<%= factor_name %>)</a></td>
+    <td><a class="simple" href="<%= factor_name.to_id %>/<%= factor_name.to_id %>_imm.xml.png"><img src="idmmpmm_html/<%= factor_name.to_id %>_imm.xml.png"/></td>
+    
+    <%
+      hi1 = data[:control1][:immbest] > 0 ? " class='green' " : ""
+      hi2 = data[:control2][:immbest] > 0 ? " class='green' " : ""
+      hi3 = data[:control3][:immbest] > 0 ? " class='green' " : ""
+    %>
+    
+    <td><%= data[:control2][:total]%></td>
+    <td<%= hi1%>><%= data[:control1][:immbest]%></td>
+    <td<%= hi2%>><%= data[:control2][:immbest]%></td>
+    <td<%= hi3%>><%= data[:control3][:immbest]%></td>
+    
+    <td style="padding: 3px; font-size: 150%;"><a href="idmmpmm_control/<%= factor_name.to_id %>/<%= factor_name.to_id %>_control1.png">&lt;graph1&gt;</a></td>
+    <td style="padding: 3px; font-size: 150%;"><a href="idmmpmm_control/<%= factor_name.to_id %>/<%= factor_name.to_id %>_control2.png">&lt;graph2&gt;</a></td>
+    <td style="padding: 3px; font-size: 150%;"><a href="idmmpmm_control/<%= factor_name.to_id %>/<%= factor_name.to_id %>_control3.png">&lt;graph3&gt;</a></td>
+  </tr>
+  
+<% } %>
+
+</table>

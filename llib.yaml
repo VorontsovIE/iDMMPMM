@@ -1,0 +1,17 @@
+--- 
+"[dmmpmmimm]": 
+  GENOME_RELEASE: 
+    :description: genome release used for data processing
+    :value: dmel40
+"[segexbsm]": 
+  BISMARK_OUT: 
+    :path: AEF1_footprints.xml
+    :description: segments extracted from bismark db using source_id=BE_DMEL, factor_name=Aef1
+"[idmmpmm]": 
+  GENOME_RELEASE: 
+    :description: genome release used for data processing
+    :value: dmel40
+"[by_seg2mfa]": 
+  FASTA_OUT: 
+    :path: z_2.mfa
+    :description: d:\gbx\proj\dmchch\bsmdata\z_2.xml converted to fasta format using genome_release=dmel40

@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta name="generator" content="Hands & Brain">
+  <title>smBsm integrated system - iDMMPMM</title>
+  <link rel="stylesheet" href="idmmpmm.css" type="text/css">
+</head>
+<body>
+<div id="content"><div class="container">
+
+<h1><a href="index.html" style="font-size: 60%;">&lt;back&gt;</a> iDMMPMM procedure details</h1>
+<h2>Motif comparison table description</h2>
+<p>We used AhoPro to compare quality of different motifs using different sequence sets. AhoPro is used to compute P-value
+i. e. the probability to observe one or more motif occurences better than some threshold in a random sequence of given length. Random sequence length was set as the
+3 maximum motif length - 2 to take into account possible self-overlapping effects. For random sequence we use Bernoulli model with the nucleotide probabilities 
+estimated from Drosophila genome (April 2004, dm2; dmel40 in our notation).
+Taking the range of PWM thresholds one can plot P-values versus the number of sequences having best site occurences better or equal than some fixed threshold corresponding to the concrete P-value.
+It can be taken as a ROC-curve (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp434v1">Kulakovskiy et. al., 2009</a> for details).
+
+For each sequence set the 'overfitted' motif built from this set was excluded from the comparison.</p>
+
+<br/>
+<p>Column names: 
+<br/><b>'tot'</b> column refers to total number of points used in comparison (maximum number is equal to sequence count minus one).
+This is limited by:
+<br/>- the fixed threshold of each motif (the calculation stops for the motif if its fixed threshold is reached)
+<br/>- the maximum allowed P-value (we used 0.1 upper bound)
+<br/><b>'imm'</b> column refers to the number of cases where an integrated ('imm', made using all available sources) motif beats all other motifs
+<br/><b>'exc'</b> column refers to the number of cases where an 'except' motif (created by integrating all sequence sets
+except the one used for the quality test) beats all single-set based motifs.
+</p><br/>
+<p>Columns are empty where there were no data for concrete factor from the selected source. 
+Columns contain -1 where there are only two available data sources and therefore 'imm' vs 'except' vs single-source
+based motifs is useless.</p>
+
+<p>Fixed motif thresholds were set as the mean + 3 s.d. taking the PWM score distribution over all possible words. See <a href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp434v1">Kulakovskiy et. al., 2009</a>
+for details.</p>
+
+<br/><p><b>NOTE</b>: you can access all comparison data and graphs on the concrete factor page.</p>
+
+<br/>
+<p>Green lines on the motif logos indicate <i>strong</i> motif DIC thresholds (see <a href="http://line.imb.ac.ru/Chipmunk/">Chipmunk</a> 'Details' page)
+and (the highest one) DIC for the case where only 2 of 4 nucleotides are present.</p>
+
+<br/>
+
+<h2>Additional control using independent ChIP-chip dataset</h2>
+<p>The same procedure was applied to all factors for which there was ChIP-chip data available. As the independent control set we used
+500bp regions around top 300 peaks (skipping top 100 peaks used for motifs construction). Only 'imm' and single-dataset-based motifs were used in this comparison.</p>
+<br/>
+
+<h2>Information on motif construction procedure</h2>
+<ul style="padding-left: 35px; ">
+  <li>Global maximum motif length was 14bp; SELEX and B1H sequences were extended by 14bp polyN sequences to allow correct positioning of possible long motifs.</li>
+  <li>We used 500bp regions around 100 best peaks of 1% FDR BDTNP ChIP-chip data.
+  <li>For each concrete factor footprinted sequences were extended by adding genomic flanks to the both sides. Flank length was set as the length of the shortest footprint minus one.</li>
+  <li>For each concrete factor the <i>maximum_motif_length</i> was determined by the lowest value from sequential Chipmunk runs on each dataset alone with the automatic length selection starting from 14bp.
+  Then all motifs were rebuilt with the maximum length allowed set to <i>maximum_motif_length</i>+1. The same upper border on length was used for integrated('imm') motif construction.</li>
+</ul>
+
+<br/>
+
+</div></div>
+</body>
+</html>

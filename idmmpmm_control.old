@@ -1,0 +1,80 @@
+#!/usr/bin/ruby
+$: << "#{File.dirname(File.dirname(File.dirname(File.expand_path(__FILE__))))}/ruby/ytilib/"
+
+require "ytilib.rb"
+require "ftools"
+
+require 'imm_common.rb'
+
+def loadpvs(files)
+  noimms = files.select { |fn| !fn.include?("imm") }
+  yeimm = files.select { |fn| fn.include?("imm") }[0]
+  
+  data = {}
+  data.default = 1.0
+  files.each { |f|
+    lines = IO.read(f).split("\n")
+    lines.each { |l|
+      l = l.strip.split
+      data[l[0].to_i] = [l[1].to_f, data[l[0].to_i]].min
+    }
+  }
+  
+  immdata = {}
+  IO.read(yeimm).split("\n").each { |l|
+    l = l.strip.split
+    immdata[l[0].to_i] = l[1].to_f
+  }
+  
+  immbest = 0
+  (data.keys & immdata.keys).each { |i|
+    immbest += 1 if immdata[i] < data[i]
+  }
+  
+  { :immbest => immbest, :total => immdata.keys.size }
+  
+end
+
+report "idmmpmm_control.rb started"
+start __FILE__
+
+idmmpmm = YAML::load_file("idmmpmm.yaml")
+wd = idmmpmm[:directory]
+
+factors = Dir["control/*.mfa"].collect { |fname| File.name_wo_ext(fname) }
+control_data = {}
+
+Dir.chdir(wd) {
+  Dir.mkdir("idmmpmm_control") unless File.exist?("idmmpmm_control")
+  Dir.chdir("idmmpmm_control") {
+    factors.each { |factor|
+      
+      control_data[factor] = {}
+      
+      Dir.mkdir(factor.to_id) unless File.exist?(factor.to_id)
+      Dir.chdir(factor.to_id) {
+        # here we are
+        bismarks = idmmpmm[:names][factor].select { |bn| !bn.include?("except") && !bn.include?("peak") }
+        
+        cmpname1 = "#{factor.to_id}_control1"
+        background = "#{Randoom::DMEL40_PROBS2['A']},#{Randoom::DMEL40_PROBS2['C']},#{Randoom::DMEL40_PROBS2['G']},#{Randoom::DMEL40_PROBS2['T']}"
+        max_single = bismarks.collect { |file| Bismark.new("../../#{factor}/#{file}").elements["//PPM"].attributes["length"].to_i }.max
+        ml_list = bismarks.inject("") { |list, bsm| list += " ../../#{factor}/#{bsm}" }
+        
+        cmpname2 = "#{factor.to_id}_control2"
+        system("ruby #{Ytilib::PATH_RUBY}pmenha/pmcmpca.rb #{cmpname2} ../../../control/#{factor}.mfa #{ml_list}") unless File.exist?("#{cmpname2}.png")
+        p_valuefs = bismarks.collect { |bsm| p_valuef = "#{File.name_wo_ext(bsm)}_on_#{factor}.mfa.ca_p_value" }
+        control_data[factor][:control2] = loadpvs(p_valuefs)
+        
+        control_data[factor][:names] = bismarks
+        
+        system("ruby #{Ytilib::PATH_RUBY}pmenha/pmcmp1.rb #{cmpname1} ../../../control/#{factor}.mfa none 0 yes 100 #{background} 0.1 #{max_single*3-2}#{ml_list}") unless File.exist?("#{cmpname1}.png")
+        p_valuefs = bismarks.collect { |bsm| p_valuef = "#{File.name_wo_ext(bsm)}_on_#{factor}.mfa.p_value" }
+        control_data[factor][:control1] = loadpvs(p_valuefs)
+      }
+    }
+  }
+}
+
+cmpd_yaml = File.new("idmmpmm_control.yaml", "w")
+YAML.dump(control_data, cmpd_yaml)

@@ -1,0 +1,113 @@
+* { margin: 0; padding: 0; }
+html, body { height: 100%; font-family: Arial, Sans; }
+
+body { background: YellowGreen; color: black; 
+  text-align: center;
+}
+
+#content { height: auto !important; height: 100%; min-height: 100%; background: LightGoldenrodYellow; 
+	background-position: bottom;
+	background-repeat: repeat-x;
+  background-image: url(dnanimals_green.gif);
+}
+#content .container { width: 900px; margin: 0 auto; padding: 20px 20px 20px 20px; 
+  border-top: none;
+  border-bottom: none;
+  text-align: left;
+}
+
+.colored {
+  background-color: #BFD6B5;
+}
+
+.red {
+  background-color: #f5b29a;
+}
+
+.orange {
+  background-color: #f5cb9a;
+}
+
+.yellow {
+  background-color: #f5f19a;
+}
+
+.green {
+  background-color: #54EE94;
+}
+
+.blue {
+  background-color: #66ffff;
+}
+
+.violet {
+  background-color: #ffccff;
+}
+
+th {
+  border: 1px #BFD6B5 dotted;
+}
+
+h1 {
+  color: black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  border-top: 1px solid gray;
+  background: #D8C9B5;
+  background-image: url(chipmunk_green.gif);
+}
+h2 {
+  color: black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  padding-bottom: 2px;
+  padding-left: 20px;
+  border-top: 1px solid gray;
+  background: #BFD6B5;
+}
+
+p {
+  padding-left: 20px;
+}
+
+a {
+	color: black;
+  font-weight: bolder;
+	text-decoration: none;
+  background-color: #eeeeee;
+  border-bottom: 1px solid black;
+  border-left: 1px solid gray;
+  border-right: 1px solid #aaaaaa;
+  border-top: 1px solid white;
+}
+
+a:hover {
+	color: black;
+  background-color: white;
+  border-top: 1px solid black;
+  border-left: 1px solid #aaaaaa;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid white;
+}
+
+a:active {
+  background: #54EE94;
+}
+
+img {
+  border: 1px dotted tan;
+}
+
+a.simple {
+  border: none;
+  background: transparent;
+}
+a.simple:hover {
+  border: none;
+  background: transparent;
+}

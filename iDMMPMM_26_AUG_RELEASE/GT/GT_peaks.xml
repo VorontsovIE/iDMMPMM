@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<smallbismark>
+ <comment name='WARNING'>This is a draft version of small-BiSMark. Specification is the subject to change!</comment>
+ <motif name='gt' id='GT.MTF'>
+  <comment name='discrete information content by position'>[-0.208989423643549, -0.800763080305824, -0.282740489487558, -1.11827142779845, -0.73109071640486, -1.0358966569098, -0.634637344238057, -1.0299227344202, -0.607147743199579, -0.525235211454356, 0.0, -0.568712428565476]</comment>
+  <comment name='discrete information content'>-7.54340725642771</comment>
+  <PPM words-count='100.0' length='12'>
+   <pm-column position='1'>
+    <a>0.94</a>
+    <c>0.0</c>
+    <g>0.06</g>
+    <t>0.0</t>
+   </pm-column>
+   <pm-column position='2'>
+    <a>0.7</a>
+    <c>0.16</c>
+    <g>0.01</g>
+    <t>0.13</t>
+   </pm-column>
+   <pm-column position='3'>
+    <a>0.91</a>
+    <c>0.0</c>
+    <g>0.0</g>
+    <t>0.09</t>
+   </pm-column>
+   <pm-column position='4'>
+    <a>0.53</a>
+    <c>0.23</c>
+    <g>0.12</g>
+    <t>0.12</t>
+   </pm-column>
+   <pm-column position='5'>
+    <a>0.69</a>
+    <c>0.26</c>
+    <g>0.01</g>
+    <t>0.04</t>
+   </pm-column>
+   <pm-column position='6'>
+    <a>0.32</a>
+    <c>0.41</c>
+    <g>0.0</g>
+    <t>0.27</t>
+   </pm-column>
+   <pm-column position='7'>
+    <a>0.78</a>
+    <c>0.09</c>
+    <g>0.13</g>
+    <t>0.0</t>
+   </pm-column>
+   <pm-column position='8'>
+    <a>0.39</a>
+    <c>0.0</c>
+    <g>0.24</g>
+    <t>0.37</t>
+   </pm-column>
+   <pm-column position='9'>
+    <a>0.81</a>
+    <c>0.12</c>
+    <g>0.03</g>
+    <t>0.04</t>
+   </pm-column>
+   <pm-column position='10'>
+    <a>0.84</a>
+    <c>0.01</c>
+    <g>0.1</g>
+    <t>0.05</t>
+   </pm-column>
+   <pm-column position='11'>
+    <a>1.0</a>
+    <c>0.0</c>
+    <g>0.0</g>
+    <t>0.0</t>
+   </pm-column>
+   <pm-column position='12'>
+    <a>0.72</a>
+    <c>0.0</c>
+    <g>0.0</g>
+    <t>0.28</t>
+   </pm-column>
+  </PPM>
+  <PWM words-count='100.0' threshold='3.41659639521937' length='12'>
+   <pm-column position='1'>
+    <a>1.15297563528369</a>
+    <c>-3.12301335276571</c>
+    <g>-1.15776974616865</g>
+    <t>-3.12301335276571</t>
+   </pm-column>
+   <pm-column position='2'>
+    <a>0.862929908054746</a>
+    <c>-0.268591079115357</c>
+    <g>-2.41854294644353</g>
+    <t>-0.742318922360827</t>
+   </pm-column>
+   <pm-column position='3'>
+    <a>1.12099844020009</a>
+    <c>-3.12301335276571</c>
+    <g>-3.12301335276571</g>
+    <t>-1.06976101928355</t>
+   </pm-column>
+   <pm-column position='4'>
+    <a>0.59066689253543</a>
+    <c>0.0766318840570465</c>
+    <g>-0.537258716432965</g>
+    <t>-0.814683984570216</t>
+   </pm-column>
+   <pm-column position='5'>
+    <a>0.848810336042018</a>
+    <c>0.194518102702218</c>
+    <g>-2.41854294644353</g>
+    <t>-1.73192980713126</t>
+   </pm-column>
+   <pm-column position='6'>
+    <a>0.101988528309475</a>
+    <c>0.636645604868547</c>
+    <g>-3.12301335276571</g>
+    <t>-0.0605753090362237</t>
+   </pm-column>
+   <pm-column position='7'>
+    <a>0.969236556152613</a>
+    <c>-0.800137871990201</c>
+    <g>-0.463028190228327</g>
+    <t>-3.12301335276571</t>
+   </pm-column>
+   <pm-column position='8'>
+    <a>0.292653051520668</a>
+    <c>-3.12301335276571</c>
+    <g>0.117491025679781</g>
+    <t>0.241783662145655</t>
+   </pm-column>
+   <pm-column position='9'>
+    <a>1.00635811443535</a>
+    <c>-0.537258716432965</c>
+    <g>-1.71978187364242</g>
+    <t>-1.73192980713126</t>
+   </pm-column>
+   <pm-column position='10'>
+    <a>1.04215084370943</a>
+    <c>-2.41854294644353</c>
+    <g>-0.704624824652889</g>
+    <t>-1.55982812209655</t>
+   </pm-column>
+   <pm-column position='11'>
+    <a>1.21401679331537</a>
+    <c>-3.12301335276571</c>
+    <g>-3.12301335276571</g>
+    <t>-3.12301335276571</t>
+   </pm-column>
+   <pm-column position='12'>
+    <a>0.890584682000212</a>
+    <c>-3.12301335276571</c>
+    <g>-3.12301335276571</g>
+    <t>-0.0258795445421712</t>
+   </pm-column>
+  </PWM>
+ </motif>
+</smallbismark>

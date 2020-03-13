@@ -1,0 +1,885 @@
+--- 
+:directory: iDMMPMM_20_AUG_00_23_57
+:graphs: 
+  ttk: 
+  - TTK_on_b1h.png
+  - TTK_on_footprint.png
+  ems: 
+  - EMS_on_b1h.png
+  - EMS_on_footprint.png
+  Ubx: 
+  - UBX_on_selex.png
+  - UBX_on_b1h.png
+  - UBX_on_footprint.png
+  vnd: 
+  - VND_on_selex.png
+  - VND_on_footprint.png
+  ftz: 
+  - FTZ_on_selex.png
+  - FTZ_on_b1h.png
+  - FTZ_on_footprint.png
+  - FTZ_on_peaks.png
+  Med: 
+  - MED_on_footprint.png
+  - MED_on_peaks.png
+  prd: 
+  - PRD_on_b1h.png
+  - PRD_on_footprint.png
+  - PRD_on_peaks.png
+  gt: 
+  - GT_on_b1h.png
+  - GT_on_footprint.png
+  - GT_on_peaks.png
+  Dfd: 
+  - DFD_on_b1h.png
+  - DFD_on_footprint.png
+  Abd-B: 
+  - ABD_B_on_b1h.png
+  - ABD_B_on_footprint.png
+  shn: 
+  - SHN_on_footprint.png
+  - SHN_on_peaks.png
+  fkh: 
+  - FKH_on_b1h.png
+  - FKH_on_footprint.png
+  bcd: 
+  - BCD_on_selex.png
+  - BCD_on_b1h.png
+  - BCD_on_footprint.png
+  - BCD_on_peaks.png
+  Eip74EF: 
+  - EIP74EF_on_selex.png
+  - EIP74EF_on_footprint.png
+  z: 
+  - Z_on_footprint.png
+  - Z_on_peaks.png
+  slp1: 
+  - SLP1_on_b1h.png
+  - SLP1_on_footprint.png
+  - SLP1_on_peaks.png
+  hb: 
+  - HB_on_b1h.png
+  - HB_on_footprint.png
+  - HB_on_peaks.png
+  D: 
+  - D_on_b1h.png
+  - D_on_peaks.png
+  nub: 
+  - NUB_on_b1h.png
+  - NUB_on_footprint.png
+  brk: 
+  - BRK_on_selex.png
+  - BRK_on_footprint.png
+  abd-A: 
+  - ABD_A_on_b1h.png
+  - ABD_A_on_footprint.png
+  Mad: 
+  - MAD_on_footprint.png
+  - MAD_on_peaks.png
+  twi: 
+  - TWI_on_footprint.png
+  - TWI_on_peaks.png
+  srp: 
+  - SRP_on_selex.png
+  - SRP_on_footprint.png
+  sna: 
+  - SNA_on_selex.png
+  - SNA_on_footprint.png
+  - SNA_on_peaks.png
+  kni: 
+  - KNI_on_b1h.png
+  - KNI_on_footprint.png
+  - KNI_on_peaks.png
+  cad: 
+  - CAD_on_b1h.png
+  - CAD_on_footprint.png
+  - CAD_on_peaks.png
+  usp: 
+  - USP_on_selex.png
+  - USP_on_footprint.png
+  bab1: 
+  - BAB1_on_selex.png
+  - BAB1_on_footprint.png
+  Kr: 
+  - KR_on_b1h.png
+  - KR_on_footprint.png
+  - KR_on_peaks.png
+  ovo: 
+  - OVO_on_selex.png
+  - OVO_on_footprint.png
+  h: 
+  - H_on_selex.png
+  - H_on_b1h.png
+  - H_on_peaks.png
+  dl: 
+  - DL_on_selex.png
+  - DL_on_b1h.png
+  - DL_on_footprint.png
+  - DL_on_peaks.png
+  tll: 
+  - TLL_on_b1h.png
+  - TLL_on_footprint.png
+  - TLL_on_peaks.png
+  oc: 
+  - OC_on_selex.png
+  - OC_on_b1h.png
+  hkb: 
+  - HKB_on_b1h.png
+  - HKB_on_footprint.png
+  - HKB_on_peaks.png
+  eve: 
+  - EVE_on_b1h.png
+  - EVE_on_footprint.png
+  en: 
+  - EN_on_selex.png
+  - EN_on_b1h.png
+  - EN_on_footprint.png
+  Antp: 
+  - ANTP_on_b1h.png
+  - ANTP_on_footprint.png
+:names: 
+  ttk: 
+  - TTK_b1h.xml
+  - TTK_footprint.xml
+  - TTK_imm.xml
+  ems: 
+  - EMS_b1h.xml
+  - EMS_footprint.xml
+  - EMS_imm.xml
+  Ubx: 
+  - UBX_selex.xml
+  - UBX_b1h.xml
+  - UBX_footprint.xml
+  - UBX_imm.xml
+  - UBX_except_selex.xml
+  - UBX_except_b1h.xml
+  - UBX_except_footprint.xml
+  vnd: 
+  - VND_selex.xml
+  - VND_footprint.xml
+  - VND_imm.xml
+  ftz: 
+  - FTZ_selex.xml
+  - FTZ_b1h.xml
+  - FTZ_footprint.xml
+  - FTZ_peaks.xml
+  - FTZ_imm.xml
+  - FTZ_except_selex.xml
+  - FTZ_except_b1h.xml
+  - FTZ_except_footprint.xml
+  - FTZ_except_peaks.xml
+  Med: 
+  - MED_footprint.xml
+  - MED_peaks.xml
+  - MED_imm.xml
+  prd: 
+  - PRD_b1h.xml
+  - PRD_footprint.xml
+  - PRD_peaks.xml
+  - PRD_imm.xml
+  - PRD_except_b1h.xml
+  - PRD_except_footprint.xml
+  - PRD_except_peaks.xml
+  gt: 
+  - GT_b1h.xml
+  - GT_footprint.xml
+  - GT_peaks.xml
+  - GT_imm.xml
+  - GT_except_b1h.xml
+  - GT_except_footprint.xml
+  - GT_except_peaks.xml
+  Dfd: 
+  - DFD_b1h.xml
+  - DFD_footprint.xml
+  - DFD_imm.xml
+  Abd-B: 
+  - ABD_B_b1h.xml
+  - ABD_B_footprint.xml
+  - ABD_B_imm.xml
+  shn: 
+  - SHN_footprint.xml
+  - SHN_peaks.xml
+  - SHN_imm.xml
+  fkh: 
+  - FKH_b1h.xml
+  - FKH_footprint.xml
+  - FKH_imm.xml
+  bcd: 
+  - BCD_selex.xml
+  - BCD_b1h.xml
+  - BCD_footprint.xml
+  - BCD_peaks.xml
+  - BCD_imm.xml
+  - BCD_except_selex.xml
+  - BCD_except_b1h.xml
+  - BCD_except_footprint.xml
+  - BCD_except_peaks.xml
+  Eip74EF: 
+  - EIP74EF_selex.xml
+  - EIP74EF_footprint.xml
+  - EIP74EF_imm.xml
+  z: 
+  - Z_footprint.xml
+  - Z_peaks.xml
+  - Z_imm.xml
+  slp1: 
+  - SLP1_b1h.xml
+  - SLP1_footprint.xml
+  - SLP1_peaks.xml
+  - SLP1_imm.xml
+  - SLP1_except_b1h.xml
+  - SLP1_except_footprint.xml
+  - SLP1_except_peaks.xml
+  hb: 
+  - HB_b1h.xml
+  - HB_footprint.xml
+  - HB_peaks.xml
+  - HB_imm.xml
+  - HB_except_b1h.xml
+  - HB_except_footprint.xml
+  - HB_except_peaks.xml
+  D: 
+  - D_b1h.xml
+  - D_peaks.xml
+  - D_imm.xml
+  nub: 
+  - NUB_b1h.xml
+  - NUB_footprint.xml
+  - NUB_imm.xml
+  brk: 
+  - BRK_selex.xml
+  - BRK_footprint.xml
+  - BRK_imm.xml
+  abd-A: 
+  - ABD_A_b1h.xml
+  - ABD_A_footprint.xml
+  - ABD_A_imm.xml
+  Mad: 
+  - MAD_footprint.xml
+  - MAD_peaks.xml
+  - MAD_imm.xml
+  twi: 
+  - TWI_footprint.xml
+  - TWI_peaks.xml
+  - TWI_imm.xml
+  srp: 
+  - SRP_selex.xml
+  - SRP_footprint.xml
+  - SRP_imm.xml
+  sna: 
+  - SNA_selex.xml
+  - SNA_footprint.xml
+  - SNA_peaks.xml
+  - SNA_imm.xml
+  - SNA_except_selex.xml
+  - SNA_except_footprint.xml
+  - SNA_except_peaks.xml
+  kni: 
+  - KNI_b1h.xml
+  - KNI_footprint.xml
+  - KNI_peaks.xml
+  - KNI_imm.xml
+  - KNI_except_b1h.xml
+  - KNI_except_footprint.xml
+  - KNI_except_peaks.xml
+  cad: 
+  - CAD_b1h.xml
+  - CAD_footprint.xml
+  - CAD_peaks.xml
+  - CAD_imm.xml
+  - CAD_except_b1h.xml
+  - CAD_except_footprint.xml
+  - CAD_except_peaks.xml
+  usp: 
+  - USP_selex.xml
+  - USP_footprint.xml
+  - USP_imm.xml
+  bab1: 
+  - BAB1_selex.xml
+  - BAB1_footprint.xml
+  - BAB1_imm.xml
+  Kr: 
+  - KR_b1h.xml
+  - KR_footprint.xml
+  - KR_peaks.xml
+  - KR_imm.xml
+  - KR_except_b1h.xml
+  - KR_except_footprint.xml
+  - KR_except_peaks.xml
+  ovo: 
+  - OVO_selex.xml
+  - OVO_footprint.xml
+  - OVO_imm.xml
+  h: 
+  - H_selex.xml
+  - H_b1h.xml
+  - H_peaks.xml
+  - H_imm.xml
+  - H_except_selex.xml
+  - H_except_b1h.xml
+  - H_except_peaks.xml
+  dl: 
+  - DL_selex.xml
+  - DL_b1h.xml
+  - DL_footprint.xml
+  - DL_peaks.xml
+  - DL_imm.xml
+  - DL_except_selex.xml
+  - DL_except_b1h.xml
+  - DL_except_footprint.xml
+  - DL_except_peaks.xml
+  tll: 
+  - TLL_b1h.xml
+  - TLL_footprint.xml
+  - TLL_peaks.xml
+  - TLL_imm.xml
+  - TLL_except_b1h.xml
+  - TLL_except_footprint.xml
+  - TLL_except_peaks.xml
+  oc: 
+  - OC_selex.xml
+  - OC_b1h.xml
+  - OC_imm.xml
+  hkb: 
+  - HKB_b1h.xml
+  - HKB_footprint.xml
+  - HKB_peaks.xml
+  - HKB_imm.xml
+  - HKB_except_b1h.xml
+  - HKB_except_footprint.xml
+  - HKB_except_peaks.xml
+  eve: 
+  - EVE_b1h.xml
+  - EVE_footprint.xml
+  - EVE_imm.xml
+  en: 
+  - EN_selex.xml
+  - EN_b1h.xml
+  - EN_footprint.xml
+  - EN_imm.xml
+  - EN_except_selex.xml
+  - EN_except_b1h.xml
+  - EN_except_footprint.xml
+  Antp: 
+  - ANTP_b1h.xml
+  - ANTP_footprint.xml
+  - ANTP_imm.xml
+:compare: 
+  ttk: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  ems: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  Ubx: 
+    selex: 
+      :imm_wins: 27
+      :except_wins: 3
+      :total: 68
+    b1h: 
+      :imm_wins: 15
+      :except_wins: 1
+      :total: 19
+    footprint: 
+      :imm_wins: 15
+      :except_wins: 14
+      :total: 48
+  vnd: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  ftz: 
+    selex: 
+      :imm_wins: 16
+      :except_wins: 5
+      :total: 18
+    b1h: 
+      :imm_wins: 10
+      :except_wins: 14
+      :total: 18
+    peaks: 
+      :imm_wins: 18
+      :except_wins: 2
+      :total: 98
+    footprint: 
+      :imm_wins: 36
+      :except_wins: 25
+      :total: 45
+  Med: 
+    peaks: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  prd: 
+    b1h: 
+      :imm_wins: 28
+      :except_wins: 0
+      :total: 28
+    peaks: 
+      :imm_wins: 252
+      :except_wins: 103
+      :total: 252
+    footprint: 
+      :imm_wins: 7
+      :except_wins: 2
+      :total: 7
+  gt: 
+    b1h: 
+      :imm_wins: 32
+      :except_wins: 0
+      :total: 32
+    peaks: 
+      :imm_wins: 90
+      :except_wins: 61
+      :total: 97
+    footprint: 
+      :imm_wins: 6
+      :except_wins: 1
+      :total: 7
+  Dfd: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  Abd-B: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  shn: 
+    peaks: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  fkh: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  bcd: 
+    selex: 
+      :imm_wins: 18
+      :except_wins: 19
+      :total: 46
+    b1h: 
+      :imm_wins: 7
+      :except_wins: 1
+      :total: 20
+    peaks: 
+      :imm_wins: 40
+      :except_wins: 38
+      :total: 199
+    footprint: 
+      :imm_wins: 10
+      :except_wins: 6
+      :total: 36
+  Eip74EF: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  z: 
+    peaks: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  slp1: 
+    b1h: 
+      :imm_wins: 40
+      :except_wins: 23
+      :total: 40
+    peaks: 
+      :imm_wins: 15
+      :except_wins: 3
+      :total: 98
+    footprint: 
+      :imm_wins: 1
+      :except_wins: 0
+      :total: 1
+  hb: 
+    b1h: 
+      :imm_wins: 25
+      :except_wins: 26
+      :total: 30
+    peaks: 
+      :imm_wins: 189
+      :except_wins: 140
+      :total: 199
+    footprint: 
+      :imm_wins: 96
+      :except_wins: 61
+      :total: 99
+  D: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    peaks: 
+      :imm_wins: -1
+      :except_wins: -1
+  nub: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  brk: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  abd-A: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  Mad: 
+    peaks: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  twi: 
+    peaks: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  srp: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  sna: 
+    selex: 
+      :imm_wins: 38
+      :except_wins: 28
+      :total: 39
+    peaks: 
+      :imm_wins: 150
+      :except_wins: 65
+      :total: 199
+    footprint: 
+      :imm_wins: 8
+      :except_wins: 8
+      :total: 9
+  kni: 
+    b1h: 
+      :imm_wins: 27
+      :except_wins: 10
+      :total: 27
+    peaks: 
+      :imm_wins: 186
+      :except_wins: 40
+      :total: 191
+    footprint: 
+      :imm_wins: 21
+      :except_wins: 8
+      :total: 22
+  cad: 
+    b1h: 
+      :imm_wins: 26
+      :except_wins: 3
+      :total: 33
+    peaks: 
+      :imm_wins: 94
+      :except_wins: 28
+      :total: 99
+    footprint: 
+      :imm_wins: 7
+      :except_wins: 2
+      :total: 9
+  usp: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  bab1: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  Kr: 
+    b1h: 
+      :imm_wins: 30
+      :except_wins: 6
+      :total: 31
+    peaks: 
+      :imm_wins: 197
+      :except_wins: 49
+      :total: 197
+    footprint: 
+      :imm_wins: 31
+      :except_wins: 25
+      :total: 33
+  ovo: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  h: 
+    selex: 
+      :imm_wins: 11
+      :except_wins: 15
+      :total: 21
+    b1h: 
+      :imm_wins: 34
+      :except_wins: 2
+      :total: 36
+    peaks: 
+      :imm_wins: 173
+      :except_wins: 56
+      :total: 198
+  dl: 
+    selex: 
+      :imm_wins: 24
+      :except_wins: 4
+      :total: 29
+    b1h: 
+      :imm_wins: 30
+      :except_wins: 24
+      :total: 32
+    peaks: 
+      :imm_wins: 6
+      :except_wins: 0
+      :total: 78
+    footprint: 
+      :imm_wins: 24
+      :except_wins: 20
+      :total: 26
+  tll: 
+    b1h: 
+      :imm_wins: 30
+      :except_wins: 15
+      :total: 33
+    peaks: 
+      :imm_wins: 63
+      :except_wins: 33
+      :total: 99
+    footprint: 
+      :imm_wins: 17
+      :except_wins: 11
+      :total: 18
+  oc: 
+    selex: 
+      :imm_wins: -1
+      :except_wins: -1
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+  hkb: 
+    b1h: 
+      :imm_wins: 36
+      :except_wins: 13
+      :total: 36
+    peaks: 
+      :imm_wins: 218
+      :except_wins: 105
+      :total: 275
+    footprint: 
+      :imm_wins: 1
+      :except_wins: 1
+      :total: 1
+  eve: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+  en: 
+    selex: 
+      :imm_wins: 65
+      :except_wins: 42
+      :total: 107
+    b1h: 
+      :imm_wins: 19
+      :except_wins: 4
+      :total: 22
+    footprint: 
+      :imm_wins: 12
+      :except_wins: 3
+      :total: 41
+  Antp: 
+    b1h: 
+      :imm_wins: -1
+      :except_wins: -1
+    footprint: 
+      :imm_wins: -1
+      :except_wins: -1
+:avail: 
+  ttk: 
+    b1h: TTK_b1h.mfa
+    footprint: TTK_footprint.mfa
+  ems: 
+    b1h: EMS_b1h.mfa
+    footprint: EMS_footprint.mfa
+  Ubx: 
+    selex: UBX_selex.mfa
+    b1h: UBX_b1h.mfa
+    footprint: UBX_footprint.mfa
+  vnd: 
+    selex: VND_selex.mfa
+    footprint: VND_footprint.mfa
+  ftz: 
+    selex: FTZ_selex.mfa
+    b1h: FTZ_b1h.mfa
+    footprint: FTZ_footprint.mfa
+    peaks: FTZ_peaks.mfa
+  Med: 
+    footprint: MED_footprint.mfa
+    peaks: MED_peaks.mfa
+  prd: 
+    b1h: PRD_b1h.mfa
+    footprint: PRD_footprint.mfa
+    peaks: PRD_peaks.mfa
+  gt: 
+    b1h: GT_b1h.mfa
+    footprint: GT_footprint.mfa
+    peaks: GT_peaks.mfa
+  Dfd: 
+    b1h: DFD_b1h.mfa
+    footprint: DFD_footprint.mfa
+  Abd-B: 
+    b1h: ABD_B_b1h.mfa
+    footprint: ABD_B_footprint.mfa
+  shn: 
+    footprint: SHN_footprint.mfa
+    peaks: SHN_peaks.mfa
+  fkh: 
+    b1h: FKH_b1h.mfa
+    footprint: FKH_footprint.mfa
+  bcd: 
+    selex: BCD_selex.mfa
+    b1h: BCD_b1h.mfa
+    footprint: BCD_footprint.mfa
+    peaks: BCD_peaks.mfa
+  Eip74EF: 
+    selex: EIP74EF_selex.mfa
+    footprint: EIP74EF_footprint.mfa
+  z: 
+    footprint: Z_footprint.mfa
+    peaks: Z_peaks.mfa
+  slp1: 
+    b1h: SLP1_b1h.mfa
+    footprint: SLP1_footprint.mfa
+    peaks: SLP1_peaks.mfa
+  hb: 
+    b1h: HB_b1h.mfa
+    footprint: HB_footprint.mfa
+    peaks: HB_peaks.mfa
+  D: 
+    b1h: D_b1h.mfa
+    peaks: D_peaks.mfa
+  nub: 
+    b1h: NUB_b1h.mfa
+    footprint: NUB_footprint.mfa
+  brk: 
+    selex: BRK_selex.mfa
+    footprint: BRK_footprint.mfa
+  abd-A: 
+    b1h: ABD_A_b1h.mfa
+    footprint: ABD_A_footprint.mfa
+  Mad: 
+    footprint: MAD_footprint.mfa
+    peaks: MAD_peaks.mfa
+  twi: 
+    footprint: TWI_footprint.mfa
+    peaks: TWI_peaks.mfa
+  srp: 
+    selex: SRP_selex.mfa
+    footprint: SRP_footprint.mfa
+  sna: 
+    selex: SNA_selex.mfa
+    footprint: SNA_footprint.mfa
+    peaks: SNA_peaks.mfa
+  kni: 
+    b1h: KNI_b1h.mfa
+    footprint: KNI_footprint.mfa
+    peaks: KNI_peaks.mfa
+  cad: 
+    b1h: CAD_b1h.mfa
+    footprint: CAD_footprint.mfa
+    peaks: CAD_peaks.mfa
+  usp: 
+    selex: USP_selex.mfa
+    footprint: USP_footprint.mfa
+  bab1: 
+    selex: BAB1_selex.mfa
+    footprint: BAB1_footprint.mfa
+  Kr: 
+    b1h: KR_b1h.mfa
+    footprint: KR_footprint.mfa
+    peaks: KR_peaks.mfa
+  ovo: 
+    selex: OVO_selex.mfa
+    footprint: OVO_footprint.mfa
+  h: 
+    selex: H_selex.mfa
+    b1h: H_b1h.mfa
+    peaks: H_peaks.mfa
+  dl: 
+    selex: DL_selex.mfa
+    b1h: DL_b1h.mfa
+    footprint: DL_footprint.mfa
+    peaks: DL_peaks.mfa
+  tll: 
+    b1h: TLL_b1h.mfa
+    footprint: TLL_footprint.mfa
+    peaks: TLL_peaks.mfa
+  oc: 
+    selex: OC_selex.mfa
+    b1h: OC_b1h.mfa
+  hkb: 
+    b1h: HKB_b1h.mfa
+    footprint: HKB_footprint.mfa
+    peaks: HKB_peaks.mfa
+  eve: 
+    b1h: EVE_b1h.mfa
+    footprint: EVE_footprint.mfa
+  en: 
+    selex: EN_selex.mfa
+    b1h: EN_b1h.mfa
+    footprint: EN_footprint.mfa
+  Antp: 
+    b1h: ANTP_b1h.mfa
+    footprint: ANTP_footprint.mfa

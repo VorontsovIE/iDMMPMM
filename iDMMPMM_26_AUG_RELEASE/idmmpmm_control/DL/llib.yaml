@@ -1,0 +1,14 @@
+--- 
+"[pmcmp1]": 
+  COMPARISON_GRAPH: 
+    :path: DL_control1.png
+    :description: P-values for matrices using different thresholds on the initial sequence set
+  USED_COUNT: 
+    :description: number of used (best) sequences for each motif
+    :value: 200
+  FLANK_LENGTH: 
+    :description: sequence flank length
+    :value: 0
+  TOTAL_COUNT: 
+    :description: total number of sequences from set
+    :value: 200

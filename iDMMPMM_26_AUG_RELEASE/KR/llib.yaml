@@ -1,0 +1,18 @@
+--- 
+"[pmthr]": 
+  MONTECARLO_COUNT: 
+    :description: number of montecarlo iterated words for PWMs longer than 10
+    :value: 1048576
+"[pmcmp1]": 
+  COMPARISON_GRAPH: 
+    :path: KR_on_peaks.png
+    :description: P-values for matrices using different thresholds on the initial sequence set
+  USED_COUNT: 
+    :description: number of used (best) sequences for each motif
+    :value: 200
+  FLANK_LENGTH: 
+    :description: sequence flank length
+    :value: 0
+  TOTAL_COUNT: 
+    :description: total number of sequences from set
+    :value: 200

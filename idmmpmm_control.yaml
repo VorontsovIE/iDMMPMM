@@ -1,0 +1,158 @@
+--- 
+Med: 
+  :control1: 
+    :immbest: 121
+    :total: 162
+  :names: 
+  - MED_footprint.xml
+  - MED_imm.xml
+ftz: 
+  :control1: 
+    :immbest: 69
+    :total: 166
+  :names: 
+  - FTZ_selex.xml
+  - FTZ_b1h.xml
+  - FTZ_footprint.xml
+  - FTZ_imm.xml
+prd: 
+  :control1: 
+    :immbest: 380
+    :total: 469
+  :names: 
+  - PRD_b1h.xml
+  - PRD_footprint.xml
+  - PRD_imm.xml
+gt: 
+  :control1: 
+    :immbest: 115
+    :total: 182
+  :names: 
+  - GT_b1h.xml
+  - GT_footprint.xml
+  - GT_imm.xml
+shn: 
+  :control1: 
+    :immbest: 181
+    :total: 181
+  :names: 
+  - SHN_footprint.xml
+  - SHN_imm.xml
+bcd: 
+  :control1: 
+    :immbest: 49
+    :total: 393
+  :names: 
+  - BCD_selex.xml
+  - BCD_b1h.xml
+  - BCD_footprint.xml
+  - BCD_imm.xml
+z: 
+  :control1: 
+    :immbest: 189
+    :total: 195
+  :names: 
+  - Z_footprint.xml
+  - Z_imm.xml
+slp1: 
+  :control1: 
+    :immbest: 5
+    :total: 194
+  :names: 
+  - SLP1_b1h.xml
+  - SLP1_footprint.xml
+  - SLP1_imm.xml
+hb: 
+  :control1: 
+    :immbest: 377
+    :total: 399
+  :names: 
+  - HB_b1h.xml
+  - HB_footprint.xml
+  - HB_imm.xml
+D: 
+  :control1: 
+    :immbest: 187
+    :total: 196
+  :names: 
+  - D_b1h.xml
+  - D_imm.xml
+Mad: 
+  :control1: 
+    :immbest: 95
+    :total: 100
+  :names: 
+  - MAD_footprint.xml
+  - MAD_imm.xml
+twi: 
+  :control1: 
+    :immbest: 288
+    :total: 357
+  :names: 
+  - TWI_footprint.xml
+  - TWI_imm.xml
+sna: 
+  :control1: 
+    :immbest: 265
+    :total: 389
+  :names: 
+  - SNA_selex.xml
+  - SNA_footprint.xml
+  - SNA_imm.xml
+kni: 
+  :control1: 
+    :immbest: 159
+    :total: 354
+  :names: 
+  - KNI_b1h.xml
+  - KNI_footprint.xml
+  - KNI_imm.xml
+cad: 
+  :control1: 
+    :immbest: 192
+    :total: 193
+  :names: 
+  - CAD_b1h.xml
+  - CAD_footprint.xml
+  - CAD_imm.xml
+Kr: 
+  :control1: 
+    :immbest: 332
+    :total: 353
+  :names: 
+  - KR_b1h.xml
+  - KR_footprint.xml
+  - KR_imm.xml
+h: 
+  :control1: 
+    :immbest: 168
+    :total: 383
+  :names: 
+  - H_selex.xml
+  - H_b1h.xml
+  - H_imm.xml
+dl: 
+  :control1: 
+    :immbest: 16
+    :total: 156
+  :names: 
+  - DL_selex.xml
+  - DL_b1h.xml
+  - DL_footprint.xml
+  - DL_imm.xml
+tll: 
+  :control1: 
+    :immbest: 89
+    :total: 176
+  :names: 
+  - TLL_b1h.xml
+  - TLL_footprint.xml
+  - TLL_imm.xml
+hkb: 
+  :control1: 
+    :immbest: 298
+    :total: 538
+  :names: 
+  - HKB_b1h.xml
+  - HKB_footprint.xml
+  - HKB_imm.xml
